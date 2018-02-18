@@ -2,7 +2,7 @@ package lab1lopata;
 
 public class lopata {
 	private String name;
-	private double price;
+	private double material;
 	private double size;
 	private double weight;
 	private int amount;
@@ -12,16 +12,16 @@ public class lopata {
 		
 	}
 	
-	public lopata(String name,double price,double size,double weight){
+	public lopata(String name,double material,double size,double weight){
 		setName(name);
-		setPrice(price);
+		setMaterial(material);
 		setSize(size);
 		setWeight(weight);
 		
 	}
-	public lopata(String name, double price, double weight, double size, int amount) {
+	public lopata(String name, double material, double weight, double size, int amount) {
 		setName(name);
-		setPrice(price);
+		setMaterial(material);
 		setWeight(weight);
 		setSize(size);
 		setAmount(amount);
@@ -29,7 +29,7 @@ public class lopata {
 }
 	public String toString() {
 		return "Info about lopata: \nname: " + getName() 
-				+ "\nprice: " + getPrice() 
+				+ "\nprice: " + getMaterial() 
 				+ "\nsize: " + getSize() 
 				+ "\nweight: " + getWeight() 
 				+ "\namount: " + getAmount()
@@ -43,9 +43,9 @@ public class lopata {
 		System.out.println("Amount of the lopata " + getName() + " is " + getAmount() + " euro\n");
 	}
 	
-	public void resetValues(String name, double price, double size, double weight, int amount) {
+	public void resetValues(String name, double material, double size, double weight, int amount) {
 		setName(name);
-		setPrice(price);
+		setMaterial(material);
 		setSize(size);
 		setWeight(weight);
 		setAmount(amount);
@@ -75,12 +75,12 @@ public class lopata {
 		this.name = name;
 	}
 
-	public double getPrice() {
-		return price;
+	public double getMaterial() {
+		return material;
 	}
 
-	public void setPrice(double price) {
-		this.price = price;
+	public void setMaterial(double material) {
+		this.material = material;
 	}
 	
 	public int getAmount(){ 
