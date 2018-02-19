@@ -1,6 +1,6 @@
 package lab1lopata;
 
-public class lopata {
+public class Shovel {
 	private String name;
 	private double material;
 	private double size;
@@ -8,18 +8,18 @@ public class lopata {
 	private int amount;
 	private static int totalAmount = 0;
 	
-	public lopata() {
+	public Shovel() {
 		
 	}
 	
-	public lopata(String name,double material,double size,double weight){
+	public Shovel(String name,double material,double size,double weight){
 		setName(name);
 		setMaterial(material);
 		setSize(size);
 		setWeight(weight);
 		
 	}
-	public lopata(String name, double material, double weight, double size, int amount) {
+	public Shovel(String name, double material, double weight, double size, int amount) {
 		setName(name);
 		setMaterial(material);
 		setWeight(weight);
@@ -28,7 +28,7 @@ public class lopata {
 
 }
 	public String toString() {
-		return "Info about lopata: \nname: " + getName() 
+		return "Info about Shovel: \nname: " + getName() 
 				+ "\nprice: " + getMaterial() 
 				+ "\nsize: " + getSize() 
 				+ "\nweight: " + getWeight() 
@@ -36,11 +36,11 @@ public class lopata {
 				+ "\n";	
 	}
 	public static void printStaticSum() {
-		System.out.print("Amount of all lopats are " + totalAmount + " euro\n");
+		System.out.print("Amount of all Shovels are " + totalAmount + " euro\n");
 	}
 	
 	public void printSum() {
-		System.out.println("Amount of the lopata " + getName() + " is " + getAmount() + " euro\n");
+		System.out.println("Amount of the Shovel " + getName() + " is " + getAmount() + " euro\n");
 	}
 	
 	public void resetValues(String name, double material, double size, double weight, int amount) {
